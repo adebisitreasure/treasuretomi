@@ -45,3 +45,43 @@ emailButtons.forEach(button => {
         });
     });
 });
+/*
+// Lazy-load the background video after page load and interaction
+const backgroundVideo = document.querySelector('.background-video');
+const videoPlaceholder = document.querySelector('.video-placeholder');
+let videoLoaded = false;
+
+const loadBackgroundVideo = () => {
+    if (videoLoaded || !backgroundVideo) return;
+    const source = backgroundVideo.querySelector('source[data-src]');
+    if (!source) return;
+
+    source.src = source.dataset.src;
+    backgroundVideo.load();
+    videoLoaded = true;
+
+    backgroundVideo.addEventListener('canplay', () => {
+        backgroundVideo.classList.add('loaded');
+        if (videoPlaceholder) {
+            videoPlaceholder.classList.add('fade-out');
+            setTimeout(() => {
+                videoPlaceholder.style.display = 'none';
+            }, 400);
+        }
+    }, { once: true });
+
+    backgroundVideo.play().catch(() => {
+        // If autoplay is blocked, user interaction will start playback later.
+    });
+};
+
+window.addEventListener('load', () => {
+    setTimeout(loadBackgroundVideo, 1500);
+});
+
+['scroll', 'mousemove', 'click', 'touchstart'].forEach(eventName => {
+    window.addEventListener(eventName, loadBackgroundVideo, { once: true });
+});
+*/
+
+
