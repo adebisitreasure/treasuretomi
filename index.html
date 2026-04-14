@@ -71,8 +71,9 @@
     <!--Video Section-->
     <section class="video-section">
         <div class="video-container">
-            <video autoplay muted loop class="background-video">
-                <source src="./assests/compressed vid.mp4" type="video/mp4">
+            <img src="./assests/thumb.png" alt="Video placeholder" class="video-placeholder">
+            <video muted loop class="background-video" playsinline preload="none" poster="./assests/thumb.png">
+                <source data-src="./assests/compressed vid.mp4" type="video/mp4">
             </video>
         </div>
     </section>
