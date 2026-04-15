@@ -27,7 +27,7 @@ body {
     bottom: 0;
     height: 91px;
     background: rgba(5, 5, 5, 0.02);
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(20px);
     z-index: 10000;
     display: flex;
     align-items: center;
@@ -56,6 +56,11 @@ body {
 
 .logo-link {
     text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.logo-link:active {
+    opacity: 0.7;
 }
 
 .nav {
@@ -89,6 +94,14 @@ body {
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+}
+
+.nav-link-contact:hover {
+    opacity: 0.7;
+}
+
+.nav-link-contact:active {
+    opacity: 0.7;
 }
 
 .nav-link:active {
@@ -615,6 +628,15 @@ body {
 .mouse {
     margin: 46px auto 0px;
     width: 100px;
+    transition: opacity 0.3s ease;
+}
+
+.mouse:hover {
+    opacity: 0.8;
+}
+
+.mouse:active {
+    filter: brightness(2);
 }
 
 .mouse-icon {
@@ -687,7 +709,7 @@ body {
     }
 }
 
-@media (max-width: 1162px) {
+@media (max-width: 1092px) {
     .nav-link-contact {
         display: block;
     }
@@ -705,7 +727,7 @@ body {
     }
 
     .welcome-image {
-        margin-top: -168px;
+        margin-top: -75px;
     }
 
     .welcome-text {
@@ -752,7 +774,7 @@ body {
     .welcome-image img {
         width: 253px;
         height: 253px;
-        margin-top: 0px;
+        margin-top: -93px;
     }
 
     .nav-link-contact {
@@ -936,6 +958,10 @@ body {
     }
 
     .email-btn-footer:hover {
+        opacity: 0.7;
+    }
+
+    .logo-link:hover {
         opacity: 0.7;
     }
 }
