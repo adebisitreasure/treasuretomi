@@ -807,7 +807,8 @@ body {
     .about-section {
         padding-left: 22px;
         padding-right: 22px;
-        padding-top: 340px;
+        padding-top: 100px;
+        margin-top: 240px;
     }
 
     .footer {
