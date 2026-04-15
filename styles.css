@@ -260,7 +260,7 @@ body {
     font-family: 'Inter';
     font-size: 87px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 450;
     line-height: 87px;
 }
 
@@ -441,7 +441,7 @@ body {
     font-family: Inter;
     font-size: 87px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 450;
     line-height: 87px;
     /*letter-spacing: -3.81px;*/
     margin-bottom: 80px;
@@ -557,7 +557,7 @@ body {
     font-family: 'Inter';
     font-size: 87px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 450;
     line-height: 87px;
     letter-spacing: 0px;
 }
