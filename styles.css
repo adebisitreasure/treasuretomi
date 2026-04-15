@@ -348,12 +348,6 @@ body {
     top: 0;
 }
 
-.scroll-hint {
-    font-size: 20px;
-    color: #aeaeae;
-    font-weight: 600;
-}
-
 .work-header img {
     width: 100%;
 }
@@ -765,12 +759,12 @@ body {
     }
 
     .email-btn-hero {
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .welcome-image img {
-        width: 253px;
-        height: 253px;
+        width: 263px;
+        height: 263px;
         margin-top: -98px;
         margin-left: -10px;
     }
@@ -831,7 +825,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
-        font-size: 15.5px;
+        font-size: 15.9px;
     }
 
     .social-links {
@@ -878,15 +872,15 @@ body {
     }
 
     .nav-link {
-        font-size: 15.5px;
+        font-size: 15.9px;
     }
 
     .logo {
-        font-size: 15.5px;
+        font-size: 15.9px;
     }
 
     .scroll-hint {
-        font-size: 15.5px;
+        font-size: 15.9px;
     }
 }
 
@@ -908,9 +902,9 @@ body {
         content: "TREASURE";
         display: inline-block;
         font-family: 'Inter';
-        font-size: 15.5px;
+        font-size: 15.9px;
         font-weight: 600;
-        letter-spacing: 0.5px;
+        /*letter-spacing: 0.5px;*/
         text-transform: uppercase;
         line-height: normal;
     }
