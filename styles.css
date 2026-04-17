@@ -926,7 +926,19 @@ body {
     }
 }
 
-/*@media (max-width: 480px) {}*/
+@media (max-width: 480px) {
+    .work-header img {
+        display: none;
+    }
+
+    .footer-title {
+        display: none;
+    }
+
+    .about-title {
+        display: none;
+    }
+}
 
 @media (max-width: 351px) {
     .welcome-title {
