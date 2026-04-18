@@ -366,7 +366,7 @@ body {
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
-    font-weight: 550;
+    font-weight: 600;
     line-height: normal;
 }
 
@@ -521,7 +521,7 @@ body {
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 450;
     line-height: 26px;
     flex-direction: column;
     justify-content: center;
@@ -549,7 +549,7 @@ body {
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 450;
     line-height: 26px;
 }
 
@@ -873,7 +873,7 @@ body {
     }
 
     .about-left h3 {
-        font-size: 24px;
+        font-size: 22.3px;
     }
 
 
@@ -927,6 +927,22 @@ body {
 }
 
 @media (max-width: 480px) {
+    .scroll-hint {
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .scroll-hint::after {
+        content: "(SCROLL TO VIEW WORK)";
+        display: inline-block;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 600;
+        /*letter-spacing: 0.5px;*/
+        text-transform: uppercase;
+        line-height: normal;
+    }
+
     .work-header img {
         display: none;
     }
@@ -936,6 +952,10 @@ body {
     }
 
     .about-title {
+        display: none;
+    }
+
+    .email-btn-footer {
         display: none;
     }
 }
