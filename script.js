@@ -86,11 +86,12 @@ window.addEventListener('load', () => {
 
 const elements = document.querySelectorAll(".reveal, .reveal.normal");
 
-// 🔥 scroll speed tracking (safe)
+// 🔥 scroll tracking
 let lastScrollY = window.scrollY;
 let lastTime = performance.now();
 let scrollSpeed = 0;
 
+// smooth speed (removes jitter)
 const SMOOTHING = 0.15;
 
 window.addEventListener("scroll", () => {
@@ -102,39 +103,43 @@ window.addEventListener("scroll", () => {
 
     const instantSpeed = deltaY / (deltaTime || 1);
 
+    // smooth velocity
     scrollSpeed += (instantSpeed - scrollSpeed) * SMOOTHING;
 
     lastScrollY = currentY;
     lastTime = currentTime;
 });
 
-// 🔥 IMPORTANT FIX: no shared batch state anymore
 const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry, index) => {
+
+    let batchDelay = 0;
+
+    entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
 
         const el = entry.target;
 
         const isFastScroll = scrollSpeed > 1.2;
 
-        // 🧠 per-element delay (NOT shared batch delay)
-        const domIndex = Array.from(elements).indexOf(el);
-        const delay = isFastScroll ? 0 : Math.min(domIndex * 0.12, 0.3);
+        if (isFastScroll) {
+            // ⚡ instant reveal (no delay)
+            el.style.transitionDelay = "0s";
+        } else {
+            // 🐢 smooth stagger (TUNED)
+            const delay = Math.min(batchDelay, 0.3);
+            el.style.transitionDelay = `${delay}s`;
 
-        el.style.transitionDelay = `${delay}s`;
+            batchDelay += 0.14;
+        }
 
         el.classList.add("show");
-
-        // 🔥 FIX: unobserve safely AFTER animation starts
-        requestAnimationFrame(() => {
-            observer.unobserve(el);
-        });
+        observer.unobserve(el);
     });
+
 }, {
-    threshold: 0.15,
-    rootMargin: "0px 0px 150px 0px"
+    threshold: 0.2,
+    rootMargin: "0px 0px 1% 0px"
 });
 
 elements.forEach(el => observer.observe(el));
-
 
