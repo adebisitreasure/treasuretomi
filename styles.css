@@ -577,7 +577,14 @@ body {
 }
 
 .footer-email {
-    margin-bottom: 0px;
+
+    margin: 0 auto;
+}
+
+.footer-info {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
 }
 
 .social-links {
@@ -713,6 +720,45 @@ body {
         opacity: 0;
     }
 }
+
+.reveal,
+.reveal.normal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+}
+
+/* Slight variation for "normal" elements */
+.reveal.normal {
+    transform: translateY(10px);
+}
+
+/* Final visible state */
+.reveal.show,
+.reveal.normal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 👇 Add stagger */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1080px) {
     * {
@@ -865,15 +911,21 @@ body {
     .experience-title-moblie {
         display: block;
         margin-bottom: 32px;
+        font-size: 22.3px;
+    }
+
+    .experience-role {
+        font-size: 22.3px;
     }
 
     .about-text {
-        margin-bottom: 90px;
+        margin-bottom: 80px;
         margin-top: 32px;
     }
 
     .about-left h3 {
         font-size: 22.3px;
+
     }
 
 
@@ -951,8 +1003,16 @@ body {
         display: none;
     }
 
+    .work-item:nth-child(1) {
+        margin-top: 150px;
+    }
+
     .about-title {
         display: none;
+    }
+
+    .about-left h3 {
+        padding-right: 9px;
     }
 
     .email-btn-footer {
