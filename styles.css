@@ -1008,7 +1008,7 @@ body {
     }
 
     .scroll-hint::after {
-        content: "(SCROLL TO VIEW WORK)";
+        content: "(SELECTED WORK)";
         display: inline-block;
         font-family: 'Inter';
         font-size: 16px;
