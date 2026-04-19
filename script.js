@@ -122,14 +122,14 @@ const observer = new IntersectionObserver((entries, observer) => {
         const isFastScroll = scrollSpeed > 1.2;
 
         if (isFastScroll) {
-            // ⚡ instant reveal (no delay)
+            // ⚡ instant reveal (no lag)
             el.style.transitionDelay = "0s";
         } else {
-            // 🐢 smooth stagger (TUNED)
-            const delay = Math.min(batchDelay, 0.3);
+            // 🐢 smooth stagger
+            const delay = Math.min(batchDelay, 0.25);
             el.style.transitionDelay = `${delay}s`;
 
-            batchDelay += 0.14;
+            batchDelay += 0.12;
         }
 
         el.classList.add("show");
@@ -142,4 +142,3 @@ const observer = new IntersectionObserver((entries, observer) => {
 });
 
 elements.forEach(el => observer.observe(el));
-
