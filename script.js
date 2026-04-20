@@ -45,7 +45,7 @@ emailButtons.forEach(button => {
         });
     });
 });
-/*
+
 // Lazy-load the background video after page load and interaction
 const backgroundVideo = document.querySelector('.background-video');
 const videoPlaceholder = document.querySelector('.video-placeholder');
@@ -82,7 +82,10 @@ window.addEventListener('load', () => {
 ['scroll', 'mousemove', 'click', 'touchstart'].forEach(eventName => {
     window.addEventListener(eventName, loadBackgroundVideo, { once: true });
 });
-*/
+
+
+
+
 
 const elements = document.querySelectorAll(".reveal, .reveal.normal");
 
@@ -137,7 +140,7 @@ const observer = new IntersectionObserver((entries, observer) => {
     });
 
 }, {
-    threshold: 0.2,
+    threshold: 0.5,
     rootMargin: "0px 0px 1% 0px"
 });
 
