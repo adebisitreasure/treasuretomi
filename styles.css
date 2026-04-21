@@ -248,7 +248,7 @@ body {
 .welcome-content {
     display: flex;
     grid-template-columns: 1fr 1fr;
-    gap: 70px;
+    gap: 82px;
     align-items: center;
     /*max-width: 737px;*/
     margin: 0 auto;
@@ -271,7 +271,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 86px;
-    width: 430px;
+    width: 416px;
 }
 
 .welcome-title span {
@@ -288,14 +288,28 @@ body {
     width: 393px;
 }
 
-.welcome-image img {
-    width: 274px;
-    height: 274px;
-    aspect-ratio: 1/1;
+.welcome-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     margin-top: 28px;
+}
+
+.welcome-image img {
+    width: 292px;
+    height: 292px;
+    /*aspect-ratio: 1/1;*/
+
+    margin-top: 0;
     /*margin-left: 30px;*/
     margin-bottom: 0px;
     margin-right: 0px;
+    object-position: center;
+    align-self: center;
 }
 
 /* Video Section */
@@ -637,7 +651,7 @@ body {
     position: absolute;
     bottom: 24px;
     right: 34px;
-    color: #AEAEAE;
+    color: #ffffff;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -812,7 +826,7 @@ body {
     .welcome-title {
         font-size: 63px;
         line-height: 63px;
-
+        margin-top: 10px;
     }
 
     .about-title {
@@ -825,7 +839,7 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         margin-left: 16px;
-        margin-top: 264px;
+        margin-top: 100px;
         margin-right: 0px;
         gap: 24px;
     }
@@ -837,18 +851,24 @@ body {
 
     .welcome-description {
         width: 660px;
-
     }
 
     .email-btn-hero {
-        margin-top: 0px;
+        margin-top: 10px;
+    }
+
+    .welcome-image {
+        margin-left: 0px;
+        width: 238px;
+        height: 238px;
+        margin-top: 0;
     }
 
     .welcome-image img {
-        width: 263px;
-        height: 263px;
-        margin-top: -178px;
-        margin-left: -10px;
+        width: 277.9px;
+        height: 277.9px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
     .nav-link-contact {
@@ -1058,7 +1078,8 @@ body {
     .welcome-title {
         width: 321px;
     }
- .social-links {
+
+    .social-links {
         gap: 32px;
         position: relative;
         margin-top: 0px;
@@ -1067,35 +1088,38 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-.social-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    background: transparent;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: filter 0.4s ease;
-    /*filter: brightness(0) invert(1);*/
-}
+
+    .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        background: transparent;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: filter 0.4s ease;
+        /*filter: brightness(0) invert(1);*/
+    }
 
 
 
-.social-link:active {
-    filter: brightness(0) invert(1);
-    opacity: 0.5;
-}
+    .social-link:active {
+        filter: brightness(0) invert(1);
+        opacity: 0.5;
+    }
 
-.social-link img {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
-}
-.footer-credit{
-    font-size: 14px;
-}
-/*.footer-credit {
+    .social-link img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+    }
+
+    .footer-credit {
+        font-size: 14px;
+    }
+
+    /*.footer-credit {
         font-size: 0;
         line-height: 0;
     }
@@ -1108,17 +1132,18 @@ body {
         font-weight: 300;
         line-height: normal;
     }*/
-.footer{
-    border-top: 0.1px solid rgb(74, 74, 74);
-    padding-top: 60px;
-    margin: 0 46px 0 48px;
-}
-.about-section{
-    margin-bottom: 150px;
-}
+    .footer {
+        border-top: 0.1px solid rgb(74, 74, 74);
+        padding-top: 60px;
+        margin: 0 46px 0 48px;
+    }
+
+    .about-section {
+        margin-bottom: 150px;
+    }
 }
 
-@media (max-width: 351px) {
+/*@media (max-width: 351px) {
     .welcome-title {
         font-size: 53px;
         line-height: 53px;
@@ -1140,7 +1165,7 @@ body {
         line-height: 53px;
         width: 255px;
     }
-}
+}*/
 
 @media (hover: hover) and (pointer: fine) {
     .social-link:hover {
@@ -1176,10 +1201,16 @@ body {
 @media (min-width: 1300px) {
     .welcome-image img {
         /*You can increase if using longer roles(HERO TITLE)*/
-        width: 340px;
-        height: 340px;
-        margin-top: 54px;
+        width: 359.7px;
+        height: 359.7px;
 
+
+    }
+
+    .welcome-image {
+        width: 308px;
+        height: 308px;
+        margin-top: 54px;
     }
 
     .welcome-content {
@@ -1205,6 +1236,8 @@ body {
 
     .about-section {
         padding-right: 40px;
+        margin-top: 0px;
+
     }
 
     .about-left h3 {
@@ -1299,6 +1332,21 @@ body {
 
     }
 
+    .social-link {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-link img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-links {
+        gap: 45px;
+    }
+
+
 
 }
 
@@ -1312,6 +1360,7 @@ body {
     .welcome-section {
         max-width: 1430px;
         margin: 0 auto;
+
     }
 
     .work-grid {
@@ -1321,7 +1370,7 @@ body {
 
     .about-section {
         max-width: 1430px;
-        margin: 0 auto;
+        margin: 150px auto 0;
     }
 
     .footer {
@@ -1335,7 +1384,7 @@ body {
         align-items: center;
         margin: 0 auto;
         width: 100%;
-        padding-top: 300px;
+        padding-top: 400px;
 
     }
 
