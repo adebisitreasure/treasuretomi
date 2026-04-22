@@ -10,7 +10,8 @@ html {
 
 body {
     font-family: 'Inter';
-    background-color: #000000;
+    /*background-color: #000000;*/
+    background-color: #FFF;
     color: white;
     overflow-x: hidden;
 }
@@ -23,7 +24,8 @@ body {
     right: 0;
     bottom: 0;
     height: 76px;
-    background: rgba(5, 5, 5, 0.02);
+    /*background: rgba(5, 5, 5, 0.02);*/
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     z-index: 10000;
     display: flex;
@@ -49,7 +51,8 @@ body {
 }
 
 .logo {
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #000;
     font-family: 'Inter';
     font-size: 16px;
     font-style: normal;
@@ -78,7 +81,8 @@ body {
 .nav-link {
     text-decoration: none;
     transition: opacity 0.3s ease;
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color:#000;
     text-align: center;
     font-family: 'Inter';
     font-size: 16px;
@@ -112,8 +116,10 @@ body {
 
 
 .email-btn {
-    background: white;
-    color: black;
+    /*background: white;*/
+    background: #000;
+    /*color: black;*/
+    color: #FFF;
     border: none;
     padding: 10px 21px 10px 0px;
     border-radius: 120px;
@@ -265,7 +271,8 @@ body {
 }
 
 .welcome-title {
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #000;
     font-family: 'Inter';
     font-size: 85.6px;
     font-style: normal;
@@ -279,7 +286,8 @@ body {
 }
 
 .welcome-description {
-    color: #AEAEAE;
+    /*color: #AEAEAE;*/
+    color: #000;
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
@@ -467,7 +475,7 @@ body {
 /* About Section */
 .about-section {
     padding: 189px 34px 0px;
-    background: #000;
+    /*background: #000;*/
 }
 
 .about-container {
@@ -475,7 +483,8 @@ body {
 }
 
 .about-title {
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #000;
     font-family: Inter;
     font-size: 81.8px;
     font-style: normal;
@@ -500,7 +509,8 @@ body {
     grid-row: 1;
     grid-column: 1;
     margin: 0 0 0px 0;
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #000;
     font-family: 'Inter';
     font-size: 22px;
     font-style: normal;
@@ -513,7 +523,8 @@ body {
     grid-row: 2;
     grid-column: 1;
     margin: 0;
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #000;
     font-family: 'Inter';
     font-size: 24px;
     font-style: normal;
@@ -523,7 +534,8 @@ body {
 }
 
 .experience-title-moblie {
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #000;
     font-family: 'Inter';
     font-size: 24px;
     font-style: normal;
@@ -541,7 +553,8 @@ body {
     grid-row: 1;
     grid-column: 2;
     margin: 0px 0 120px 0;
-    color: #AEAEAE;
+    /*color: #AEAEAE;*/
+    color: #000;
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
@@ -556,7 +569,8 @@ body {
     grid-row: 2;
     grid-column: 2;
     margin: 0 0 24px 0;
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #000;
     font-family: 'Inter';
     font-size: 24px;
     font-style: normal;
@@ -569,7 +583,8 @@ body {
     grid-row: 3;
     grid-column: 2;
     margin: 0;
-    color: #AEAEAE;
+    /*color: #AEAEAE;*/
+    color: #000;
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
@@ -590,7 +605,8 @@ body {
 
 .footer-title {
     margin-bottom: 47px;
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color:#000;
     text-align: center;
     font-family: 'Inter';
     font-size: 83.7px;
