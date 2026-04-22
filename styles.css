@@ -300,8 +300,7 @@ body {
 }
 
 .welcome-image img {
-    width: 292px;
-    height: 292px;
+    width:250px;
     /*aspect-ratio: 1/1;*/
 
     margin-top: 0;
@@ -651,7 +650,7 @@ body {
     position: absolute;
     bottom: 24px;
     right: 34px;
-    color: #ffffff;
+    color: #AEAEAE;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -865,8 +864,7 @@ body {
     }
 
     .welcome-image img {
-        width: 277.9px;
-        height: 277.9px;
+        width: 238px;
         margin-top: 0px;
         margin-left: 0px;
     }
@@ -1201,8 +1199,8 @@ body {
 @media (min-width: 1300px) {
     .welcome-image img {
         /*You can increase if using longer roles(HERO TITLE)*/
-        width: 359.7px;
-        height: 359.7px;
+        width: 308px;
+       
 
 
     }
