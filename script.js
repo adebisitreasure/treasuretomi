@@ -145,3 +145,22 @@ const observer = new IntersectionObserver((entries, observer) => {
 });
 
 elements.forEach(el => observer.observe(el));
+
+
+
+const section = document.querySelector(".video-container");
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+
+  // control how fast it shrinks
+  const maxScroll = 2000;
+
+  // clamp value between 0 and 1
+  const progress = Math.min(scrollY / maxScroll, 1);
+
+  // from 100% → 80%
+  const width = 100 - (10 * progress);
+
+  section.style.width = width + "%";
+});

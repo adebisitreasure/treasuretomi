@@ -9,7 +9,11 @@ html {
 }
 
 body {
-    font-family: 'Inter';
+    /*font-family: 'Inter';*/
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     /*background-color: #000000;*/
     background-color: #FFF;
     color: white;
@@ -26,7 +30,7 @@ body {
     height: 76px;
     /*background: rgba(5, 5, 5, 0.02);*/
     background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     z-index: 10000;
     display: flex;
     align-items: center;
@@ -41,7 +45,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 48px 0 34px;
+    padding: 0 50px 0 34px;
 }
 
 .left-header {
@@ -52,12 +56,12 @@ body {
 
 .logo {
     /*color: #ffffff;*/
-    color: #000;
+    color: #0E0E0E;
     font-family: 'Inter';
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 19px;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
@@ -69,26 +73,26 @@ body {
 }
 
 .logo-link:active {
-    opacity: 0.7;
+    color: #6d6d6d;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    gap: 48px;
+    gap: 34px;
 }
 
 .nav-link {
     text-decoration: none;
     transition: opacity 0.3s ease;
     /*color: #ffffff;*/
-    color:#000;
+    color: #0E0E0E;
     text-align: center;
     font-family: 'Inter';
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 19px;
     text-transform: uppercase;
 }
 
@@ -111,17 +115,17 @@ body {
 }
 
 .nav-link.reveal.normal:active {
-    opacity: 0.7;
+    color: #6d6d6d;
 }
 
 
 .email-btn {
     /*background: white;*/
-    background: #000;
+    background: #0E0E0E;
     /*color: black;*/
     color: #FFF;
     border: none;
-    padding: 10px 21px 10px 0px;
+    padding: 12px 21px 12px 0px;
     border-radius: 120px;
     font-size: 16px;
     font-weight: 600;
@@ -133,7 +137,7 @@ body {
     gap: 8px;
     cursor: pointer;
     transition: opacity 0.3s ease;
-    width: 260px;
+    width: 264px;
     position: relative;
     margin-right: 34px;
 }
@@ -145,10 +149,10 @@ body {
 
 
 .email-btn-hero {
-    background: rgb(255, 255, 255);
-    color: black;
+    background: #0E0E0E;
+    color: white;
     border: none;
-    padding: 10px 21px 10px 0px;
+    padding: 12px 21px 12px 0px;
     border-radius: 120px;
     font-size: 16px;
     font-weight: 600;
@@ -160,7 +164,7 @@ body {
     gap: 8px;
     cursor: pointer;
     transition: opacity 0.3s ease;
-    width: 260px;
+    width: 264px;
     margin-top: -12px;
     display: none;
     position: relative;
@@ -173,10 +177,10 @@ body {
 
 
 .email-btn-footer {
-    background: rgb(255, 255, 255);
-    color: black;
+    background: #0E0E0E;
+    color: white;
     border: none;
-    padding: 10px 21px 10px 0px;
+    padding: 12px 21px 12px 0px;
     border-radius: 120px;
     font-size: 16px;
     font-weight: 600;
@@ -188,7 +192,7 @@ body {
     gap: 8px;
     cursor: pointer;
     transition: opacity 0.3s ease;
-    width: 260px;
+    width: 264px;
     position: relative;
 }
 
@@ -272,13 +276,16 @@ body {
 
 .welcome-title {
     /*color: #ffffff;*/
-    color: #000;
-    font-family: 'Inter';
-    font-size: 85.6px;
+    color: #0E0E0E;
+    font-family: 'Inter Tight';
+    font-size: 88px;
     font-style: normal;
     font-weight: 500;
     line-height: 86px;
     width: 416px;
+    letter-spacing: -.03em;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .welcome-title span {
@@ -287,13 +294,24 @@ body {
 
 .welcome-description {
     /*color: #AEAEAE;*/
-    color: #000;
+    /*color: #0E0E0E;
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
+    font-weight: 525;
+    line-height: 24px;
+    width: 413px;
+    letter-spacing: 0.81px;*/
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
     font-weight: 500;
     line-height: 24px;
-    width: 393px;
+    letter-spacing: 0;
+    text-align: start;
+    color: #0e0e0e;
+    text-decoration: none;
+    text-transform: none;
+    width: 413px;
 }
 
 .welcome-image {
@@ -308,7 +326,7 @@ body {
 }
 
 .welcome-image img {
-    width:250px;
+    width: 250px;
     /*aspect-ratio: 1/1;*/
 
     margin-top: 0;
@@ -325,7 +343,7 @@ body {
     width: 100%;
     overflow: hidden;
     margin: 0px auto 0px;
-    padding: 0px 16px 0px 16px;
+    padding: 0px 0px 0px 0px;
 }
 
 .video-container {
@@ -334,6 +352,7 @@ body {
     height: 495px;
     overflow: hidden;
     border-radius: 24px;
+    margin: 0 auto;
 }
 
 .video-container video,
@@ -375,13 +394,28 @@ body {
 
 .work-header {
     text-align: center;
-    padding: 210px 48px 0px 48px;
+    padding: 210px 0px 0px 0px;
     position: sticky;
     top: 0;
 }
 
 .work-header img {
     width: 100%;
+    display: none;
+}
+
+.work-header h1 {
+    color: #0E0E0E;
+    font-family: 'Inter Tight';
+    font-size: 15.7vw;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -.03em;
+    line-height: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+
 }
 
 .fwork2 {
@@ -390,7 +424,7 @@ body {
 
 .scroll-hint {
     margin-top: 81px;
-    color: #AEAEAE;
+    color: #6D6D6D;
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
@@ -417,16 +451,19 @@ body {
     margin-top: 2px;
     width: 24px;
     height: 24px;
+    filter: brightness(0) saturate(100%);
 }
 
 .work-info h3 {
-    color: #ffffff;
-    font-family: 'Inter';
-    font-size: 22px;
+    color: #0E0E0E;
+    font-family: 'Inter Tight';
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .work-item {
@@ -484,21 +521,23 @@ body {
 
 .about-title {
     /*color: #ffffff;*/
-    color: #000;
-    font-family: Inter;
-    font-size: 81.8px;
+    color: #0E0E0E;
+    font-family: 'Inter Tight';
+    font-size: 88px;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 500;
     line-height: 86px;
-    /*letter-spacing: -3.81px;*/
+    letter-spacing: -.03em;
     margin-bottom: 80px;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
-    gap: 0 32px;
+    gap: 0 48px;
 }
 
 .about-left {
@@ -510,13 +549,15 @@ body {
     grid-column: 1;
     margin: 0 0 0px 0;
     /*color: #ffffff;*/
-    color: #000;
-    font-family: 'Inter';
-    font-size: 22px;
+    color: #0E0E0E;
+    font-family: 'Inter Tight';
+    font-size: 24px;
     font-style: normal;
-    font-weight: 450;
-    line-height: 30px;
-    letter-spacing: 0px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -.02em;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .experience-title {
@@ -524,24 +565,28 @@ body {
     grid-column: 1;
     margin: 0;
     /*color: #ffffff;*/
-    color: #000;
+    color: #0E0E0E;
     font-family: 'Inter';
     font-size: 24px;
     font-style: normal;
-    font-weight: 450;
-    line-height: 30px;
-    letter-spacing: 0px;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: -.04em;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .experience-title-moblie {
     /*color: #ffffff;*/
-    color: #000;
+    color: #0E0E0E;
     font-family: 'Inter';
     font-size: 24px;
     font-style: normal;
-    font-weight: 450;
-    line-height: 30px;
-    letter-spacing: 0px;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: -.04em;
+    text-decoration: none;
+    text-transform: none;
     display: none;
 }
 
@@ -554,15 +599,18 @@ body {
     grid-column: 2;
     margin: 0px 0 120px 0;
     /*color: #AEAEAE;*/
-    color: #000;
+    color: #1E1E1E;
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 400;
     line-height: 26px;
+    letter-spacing: 0px;
     flex-direction: column;
     justify-content: center;
     display: flex;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .experience-role {
@@ -570,13 +618,15 @@ body {
     grid-column: 2;
     margin: 0 0 24px 0;
     /*color: #ffffff;*/
-    color: #000;
+    color: #0E0E0E;
     font-family: 'Inter';
     font-size: 24px;
     font-style: normal;
-    font-weight: 450;
-    line-height: 30px;
-    letter-spacing: 0px;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: -.04em;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .about-description {
@@ -584,12 +634,15 @@ body {
     grid-column: 2;
     margin: 0;
     /*color: #AEAEAE;*/
-    color: #000;
+    color: #1E1E1E;
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 400;
     line-height: 26px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-transform: none;
 }
 
 /* Footer */
@@ -606,14 +659,16 @@ body {
 .footer-title {
     margin-bottom: 47px;
     /*color: #ffffff;*/
-    color:#000;
+    color: #0E0E0E;
     text-align: center;
-    font-family: 'Inter';
-    font-size: 83.7px;
+    font-family: 'Inter Tight';
+    font-size: 88px;
     font-style: normal;
     font-weight: 500;
-    line-height: 87px;
-    letter-spacing: 0px;
+    line-height: 86px;
+    letter-spacing: -2.64px;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .footer-email {
@@ -651,8 +706,8 @@ body {
 
 
 .social-link:active {
-    filter: brightness(0) invert(1);
-    opacity: 0.5;
+
+    opacity: 0.01;
 }
 
 .social-link img {
@@ -666,16 +721,18 @@ body {
     position: absolute;
     bottom: 24px;
     right: 34px;
-    color: #AEAEAE;
-    font-family: Inter;
+    color: #0E0E0E;
+    font-family: 'Inter';
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 19px;
+    letter-spacing: 0px;
     text-decoration: none;
+    text-transform: none;
 }
 
-/*Mouse Indicator*/
+/*Mouse Indicator -Optional*/
 .mouse {
     margin: 46px auto 46px;
     width: 25px;
@@ -898,8 +955,8 @@ body {
     }
 
     .work-header {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 0px;
+        padding-right: 0px;
         padding-top: 340px;
     }
 
@@ -1183,12 +1240,12 @@ body {
 
 @media (hover: hover) and (pointer: fine) {
     .social-link:hover {
-        filter: brightness(0) invert(1);
+        opacity: 0.7;
         transition: filter 0.8s ease;
     }
 
     .nav-link.reveal.normal:hover {
-        opacity: 0.7;
+        color: #6d6d6d;
     }
 
     .nav-link-contact:hover {
@@ -1216,9 +1273,6 @@ body {
     .welcome-image img {
         /*You can increase if using longer roles(HERO TITLE)*/
         width: 308px;
-       
-
-
     }
 
     .welcome-image {
@@ -1256,7 +1310,7 @@ body {
 
     .about-left h3 {
         font-size: 26px;
-        line-height: 38px;
+        line-height: 30px;
         padding-right: 120px;
     }
 
@@ -1343,25 +1397,7 @@ body {
 
     .work-item.work-item-3 {
         margin: 360px auto 593px 234px;
-
     }
-
-    .social-link {
-        width: 40px;
-        height: 40px;
-    }
-
-    .social-link img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .social-links {
-        gap: 45px;
-    }
-
-
-
 }
 
 
