@@ -36,7 +36,7 @@ body {
     align-items: center;
     border: none;
     width: 100%;
-margin-top: -1px;
+    margin-top: -1px;
     justify-content: space-between;
 }
 
@@ -452,7 +452,7 @@ margin-top: -1px;
     margin-top: 4px;
     width: 24px;
     height: 24px;
-   
+
 }
 
 .work-info h3 {
@@ -708,7 +708,7 @@ margin-top: -1px;
 
 .social-link:active {
 
-    opacity: 0.01;
+    opacity: 0.5;
 }
 
 .social-link img {
@@ -916,7 +916,8 @@ margin-top: -1px;
         margin-right: 0px;
         gap: 24px;
     }
-    .welcome-section{
+
+    .welcome-section {
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -1126,7 +1127,8 @@ margin-top: -1px;
     .work-header img {
         display: none;
     }
-    .work-header h1{
+
+    .work-header h1 {
         display: none;
     }
 
