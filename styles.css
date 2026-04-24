@@ -703,7 +703,7 @@ body {
 }
 
 .social-links {
-    display: none;
+    display: flex;
     gap: 32px;
     margin: 0;
     position: absolute;
@@ -747,7 +747,7 @@ body {
 }
 
 .mobile-links {
-    display: flex;
+    display: none;
     gap: 24px;
     margin: 0;
     position: absolute;
@@ -755,15 +755,21 @@ body {
     left: 34px;
 }
 
-.mobile-links h4 {
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
+.mobile-links a {
     color: #0E0E0E;
-    text-transform: none;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
     text-decoration: none;
+    text-transform: none;
 }
+.mobile-links a:active{
+    opacity: 0.7;
+}
+
 
 .footer-credit {
     margin: 0;
@@ -1047,7 +1053,7 @@ body {
         padding-left: 16px;
         padding-right: 16px;
         padding-bottom: 0px;
-        padding-top: 140.9px;
+        padding-top: 64px;
     }
 
     .footer-credit {
@@ -1058,11 +1064,12 @@ body {
         right: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: 16px;
     }
 
     .social-links {
+        display: none;
         gap: 32px;
         position: relative;
         margin-top: 87px;
@@ -1073,8 +1080,10 @@ body {
     }
 
     .mobile-links {
+        display: flex;
         position: relative;
-        margin-top: 87px;
+        margin-top: 76px;
+        gap: 24px;
         left: 0;
         right: 0;
         margin-left: auto;
@@ -1092,18 +1101,18 @@ body {
 
     .experience-title-moblie {
         display: block;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
         font-size: 24px;
     }
 
     .experience-role {
         font-size: 24px;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
     }
 
     .about-text {
-        margin-bottom: 80px;
-        margin-top: 32px;
+        margin-bottom: 64px;
+        margin-top: 24px;
     }
 
     .about-left h3 {
