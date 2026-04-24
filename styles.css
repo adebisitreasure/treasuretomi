@@ -1,3 +1,4 @@
+/*DO NOT TOUCH! ---Unless you know what you are doing*/
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +30,24 @@ body {
     bottom: 0;
     height: 76px;
     /*background: rgba(5, 5, 5, 0.02);*/
+    /*background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);*/
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    border: none;
+    width: 100%;
+    margin-top: -1px;
+    justify-content: space-between;
+}
+.header-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 76px;
+    /*background: rgba(5, 5, 5, 0.02);*/
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(15px);
     z-index: 10000;
@@ -37,7 +56,6 @@ body {
     border: none;
     width: 100%;
     margin-top: -1px;
-    justify-content: space-between;
 }
 
 .header-content {
@@ -308,7 +326,7 @@ body {
     line-height: 24px;
     letter-spacing: 0px;
     text-align: start;
-    color: #0e0e0e;
+    color: #1E1E1E;
     text-decoration: none;
     text-transform: none;
     width: 413px;
@@ -704,7 +722,17 @@ body {
     transition: filter 0.4s ease;
 }
 
+.social-linkbehance img {
+    width: 34px;
+    object-fit: contain;
+}
 
+.social-linkbehance {
+    width: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .social-link:active {
 
@@ -1362,6 +1390,11 @@ body {
         padding-top: 300px;
     }
 
+    .work-header h1 {
+        width: 900px;
+        margin: 0 auto;
+    }
+
     .fwork {
         display: none;
     }
@@ -1436,19 +1469,13 @@ body {
 
     }
 
-    .fwork {
-        display: block;
-        align-self: center;
-        margin: 0 auto;
+    .work-header h1 {
+        width:100%;
+        font-size: 210px;
+        max-width: 1300px;
     }
 
-    .fwork2 {
-        display: none;
-    }
 
-    .work-header img {
-        width: 100%;
-    }
 }
 
 
